@@ -1,0 +1,58 @@
+This Python script provides functionality to check the status of subdomains of a user-specified domain and continuously update the status every minute in tabular format on the screen.
+
+Requirements:
+
+Python 3.x
+requests library: It is used to send HTTP requests and receive responses.
+tabulate library: It is used to format the output as a table.
+Usage:
+
+Install the required libraries using pip:
+
+pip install requests tabulate
+
+
+
+Run the script using the following command:
+
+python Q2.py
+Enter the domain name when prompted.
+
+msqube.com
+
+Result:
+Current Status:
+Subdomain    Status
+-----------  --------
+www          UP
+mail         DOWN
+blog         DOWN
+shop         DOWN
+forum        DOWN
+api          DOWN
+dev          DOWN
+test         DOWN
+admin        DOWN
+cdn          DOWN
+support      DOWN
+store        DOWN
+login        DOWN
+dashboard    DOWN
+download     DOWN
+status       DOWN
+calendar     DOWN
+docs         DOWN
+hrms         DOWN
+report       DOWN
+reports      DOWN
+
+Functions:
+
+check_subdomains_status(subdomains, domain): This function takes a list of subdomains and a domain name as input and returns a dictionary containing the status (UP or DOWN) of each subdomain.
+
+print_status_table(status_dict): This function takes a dictionary containing subdomain status as input and prints it in tabular format.
+
+main(subdomains): This function is the entry point of the script. It prompts the user to enter the domain name, then continuously checks the status of subdomains and prints the status table every minute. It takes the list of subdomains as input.
+
+Example:
+Suppose you have subdomains sub1, sub2, and sub3. Running the script will prompt you to enter the domain name, and then it will continuously check the status of these subdomains and print the status table every minute. You can customize the list of subdomains according to your requirements.
